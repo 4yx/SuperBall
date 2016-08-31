@@ -1,0 +1,174 @@
+
+
+@font-face {
+  /*
+    font-family: 'ChunkFiveRegular';
+    src: url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.eot');
+    src: url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.eot?iefix') format('eot'),
+         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.woff') format('woff'),
+         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.ttf') format('truetype'),
+         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.svg#webfont6hibqX7I') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  */
+}
+body{
+    margin:0;
+    padding:0;
+    /*
+    background-color:#FFFFFF;
+    */
+    background:url("../images/aa.jpg") no-repeat;
+    background-size:cover
+
+}
+header{
+}
+
+#logo{
+    display: inline;
+    margin-left:5px;
+ }
+#headStatus{
+    position:relative;
+    z-index:2;
+    left:80%;
+    top:-15%;
+    bottom:0;
+    right:0;
+    color: #fff;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    font-family: 'ChunkFiveRegular',Arial;
+}
+#headStatus p{
+    display: inline-block;  
+    font:bold 18px Arial;  
+    margin-left:50px;  
+    word-spacing: 7px;
+    letter-spacing: 7px;
+    padding-left:10px;
+}
+
+#headStatus p::first-letter { 
+    font-size: 150%;
+}
+#headStatus p span{
+    font-size: 24px;
+    color: #ccc;
+
+}
+
+#actionButtons{
+    float:left;
+    margin:2%;
+    display: inline-block;
+    height:10%;
+}
+#actionButtons a{
+    margin-bottom: 10px;
+}
+#canvasContainer { 
+    display: inline-block;
+    position: relative;
+    width:auto;
+    height:550px;
+    z-index:-1;
+     }
+#ballContainer{
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 550px;
+    min-width:1200px;
+    z-index:-2;
+}
+
+#playAndpause,#RestartGame{
+ 	padding: 0;
+    display: block;
+	border-radius: 50%;
+}
+ #playAndpause #pause {
+     display: none;
+ }
+ #playAndpause.playing #pause {
+     display: inline-block;
+ }
+ #playAndpause.playing #play {
+     display: none;
+ }
+  #playAndpause:hover,#RestartGame:hover{
+    cursor:pointer;
+    opacity: 0.7;
+
+}
+ #textStatus{
+    font:bold 11px Arial;  
+    color:white;
+ }
+   
+#logo img{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+#logo img:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.clear{
+    clear: both;
+}
+
+
+@keyframes fadeinout {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes fadeinout{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeinout{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes fadeinout{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}   
+#headStatus span {
+   -webkit-animation: fadeinout 3s infinite;
+   -moz-animation: fadeinout 3s infinite;
+   -o-animation: fadeinout 3s infinite;
+    animation: fadeinout 3s infinite;
+}
+
+
+
+#pietimerholder {
+    text-align : center;
+    position:absolute;
+    left:0%;
+    top:-10%;
+    height:50px;
+    width:50px;
+    right:0;
+    bottom:0;
+    z-index: 10;  
+}
